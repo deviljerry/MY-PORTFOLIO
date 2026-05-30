@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects | Qasim Naveed</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .projects-grid-page {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            padding: 4rem 0;
+        }
+        .projects-grid-page .project-card {
+            width: 100%;
+            min-width: unset;
+            max-width: unset;
+            height: 450px;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .projects-grid-page {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="grid-background"></div>
+
+    <div class="container" style="padding-top: 5rem; padding-bottom: 5rem;">
+        <a href="index.html" class="btn btn-ghost" style="margin-bottom: 2rem; display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none;">
+            <span>&#8592;</span> BACK TO TERMINAL
+        </a>
+        <h1 class="hero-title" style="font-size: clamp(2rem, 5vw, 4rem); margin-bottom: 1rem;">Complete <span class="text-accent">Project Log.</span></h1>
+        <p class="service-desc" style="max-width: 600px; margin-bottom: 4rem;">A comprehensive archive of cloud infrastructure, zero-trust networks, microservices ecosystems, and automation pipelines I have engineered.</p>
+        
+        <div class="projects-grid-page">
+            <!-- Project 1 -->
+            <div class="project-card" data-cursor="view">
+                <div class="brackets"></div>
+                <div class="project-visual">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" alt="AWS Multi-Region" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.5; mix-blend-mode: luminosity; position: absolute; inset: 0; z-index: 0;">
+                    <div class="mesh-grid" style="position: absolute; inset: 0; z-index: 1;"></div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta"><span>01 — INFRASTRUCTURE</span><span>AWS</span></div>
+                    <h3 class="project-title">Global AWS Architecture</h3>
+                    <p class="service-desc">Architected a resilient, fault-tolerant infrastructure spanning 3 AWS regions using Terraform and Route 53 latency routing.</p>
+                    <div class="project-tech"><span class="tech-pill">AWS</span><span class="tech-pill">Terraform</span></div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-cursor="view">
+                <div class="brackets"></div>
+                <div class="project-visual">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Zero-Trust Network" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.5; mix-blend-mode: luminosity; position: absolute; inset: 0; z-index: 0;">
+                    <div class="mesh-grid" style="position: absolute; inset: 0; z-index: 1;"></div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta"><span>02 — SECURITY</span><span>Cloudflare</span></div>
+                    <h3 class="project-title">Zero-Trust Network</h3>
+                    <p class="service-desc">Deployed an impenetrable perimeter utilizing Cloudflare Tunnels, WAF policies, and Nginx proxy management.</p>
+                    <div class="project-tech"><span class="tech-pill">Cloudflare</span><span class="tech-pill">Nginx</span></div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-cursor="view">
+                <div class="brackets"></div>
+                <div class="project-visual">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80" alt="K8s Cluster" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.5; mix-blend-mode: luminosity; position: absolute; inset: 0; z-index: 0;">
+                    <div class="mesh-grid" style="position: absolute; inset: 0; z-index: 1;"></div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta"><span>03 — ORCHESTRATION</span><span>K8s</span></div>
+                    <h3 class="project-title">High-Availability K8s</h3>
+                    <p class="service-desc">Bootstrapped a production-grade Kubernetes cluster utilizing Rancher, Helm charts, and Istio Service Mesh.</p>
+                    <div class="project-tech"><span class="tech-pill">Kubernetes</span><span class="tech-pill">Helm</span></div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card" data-cursor="view">
+                <div class="brackets"></div>
+                <div class="project-visual">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" alt="GitOps Pipeline" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.5; mix-blend-mode: luminosity; position: absolute; inset: 0; z-index: 0;">
+                    <div class="mesh-grid" style="position: absolute; inset: 0; z-index: 1;"></div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta"><span>04 — AUTOMATION</span><span>CI/CD</span></div>
+                    <h3 class="project-title">GitOps & CI/CD Pipeline</h3>
+                    <p class="service-desc">Fully automated deployment pipelines via GitHub Actions and ArgoCD, achieving zero-downtime blue/green deployments.</p>
+                    <div class="project-tech"><span class="tech-pill">GitHub Actions</span><span class="tech-pill">ArgoCD</span></div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card" data-cursor="view">
+                <div class="brackets"></div>
+                <div class="project-visual">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Observability" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.5; mix-blend-mode: luminosity; position: absolute; inset: 0; z-index: 0;">
+                    <div class="mesh-grid" style="position: absolute; inset: 0; z-index: 1;"></div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta"><span>05 — OBSERVABILITY</span><span>SRE</span></div>
+                    <h3 class="project-title">Telemetry & Logging</h3>
+                    <p class="service-desc">Implemented comprehensive full-stack monitoring using Prometheus, Grafana, and the ELK Stack for real-time anomaly detection.</p>
+                    <div class="project-tech"><span class="tech-pill">Prometheus</span><span class="tech-pill">Grafana</span></div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card" data-cursor="view">
+                <div class="brackets"></div>
+                <div class="project-visual">
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80" alt="Microservices" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.5; mix-blend-mode: luminosity; position: absolute; inset: 0; z-index: 0;">
+                    <div class="mesh-grid" style="position: absolute; inset: 0; z-index: 1;"></div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta"><span>06 — CONTAINERS</span><span>Docker</span></div>
+                    <h3 class="project-title">Microservices Ecosystem</h3>
+                    <p class="service-desc">Containerized 15+ legacy applications into Docker Swarm with Traefik routing, Redis caching, and RabbitMQ brokering.</p>
+                    <div class="project-tech"><span class="tech-pill">Docker Swarm</span><span class="tech-pill">Redis</span></div>
+                </div>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="project-card" data-cursor="view">
+                <div class="brackets"></div>
+                <div class="project-visual">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="Azure DR" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.5; mix-blend-mode: luminosity; position: absolute; inset: 0; z-index: 0;">
+                    <div class="mesh-grid" style="position: absolute; inset: 0; z-index: 1;"></div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta"><span>07 — RESILIENCY</span><span>Azure</span></div>
+                    <h3 class="project-title">Azure Disaster Recovery</h3>
+                    <p class="service-desc">Engineered an automated failover system using Azure Site Recovery and Azure SQL Geo-Replication, dropping RTO to under 2 minutes.</p>
+                    <div class="project-tech"><span class="tech-pill">Azure</span><span class="tech-pill">SQL Failover</span></div>
+                </div>
+            </div>
+
+            <!-- Project 8 -->
+            <div class="project-card" data-cursor="view">
+                <div class="brackets"></div>
+                <div class="project-visual">
+                    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80" alt="Infra Security" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.5; mix-blend-mode: luminosity; position: absolute; inset: 0; z-index: 0;">
+                    <div class="mesh-grid" style="position: absolute; inset: 0; z-index: 1;"></div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta"><span>08 — COMPLIANCE</span><span>SecOps</span></div>
+                    <h3 class="project-title">Infrastructure Security</h3>
+                    <p class="service-desc">Hardened cloud security posture utilizing AWS GuardDuty, HashiCorp Vault for secrets management, and Trivy image scanning.</p>
+                    <div class="project-tech"><span class="tech-pill">Vault</span><span class="tech-pill">GuardDuty</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

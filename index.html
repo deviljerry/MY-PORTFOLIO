@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Qasim Naveed - Full Stack AI Developer & DevOps Engineer Portfolio">
+    <title>Qasim Naveed | Architecting Intelligent Systems</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <!-- Atmospheric Background Elements -->
+    <div class="noise-overlay"></div>
+    <div class="grid-background"></div>
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="vignette"></div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor-dot" id="cursor-dot"></div>
+    <div class="custom-cursor-ring" id="cursor-ring"></div>
+
+    <!-- Theatrical Loader -->
+    <div id="loader">
+        <div id="loader-text">INITIALIZING ARCHITECTURE</div>
+        <div id="loader-progress">0%</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo">Qasim Naveed<span class="text-accent">.</span></a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#hero">INIT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-eyebrow">— Senior Cloud Architect & DevOps SRE</div>
+                    <h1 class="hero-title">
+                        <span class="char-wrap">Architecting</span><br>
+                        <span class="char-wrap text-accent">Zero-Trust</span><br>
+                        <span class="char-wrap">Infrastructure.</span>
+                    </h1>
+                    <p class="hero-subtitle">Building production-grade High-Availability Clusters, scalable GitOps pipelines, and Multi-Region cloud deployments. Specializing in AWS, Kubernetes, Terraform, Docker, and CI/CD automation to guarantee 100% uptime.</p>
+                    
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary" data-cursor="magnetic">View Workspace</a>
+                        <a href="#contact" class="btn btn-ghost" data-cursor="magnetic">Get in Touch</a>
+                    </div>
+                    
+                    <div class="hero-status">
+                        <div class="status-dot"></div>
+                        <span>Available for Select Freelance Contracts</span>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-num">08+</span>
+                            <span class="stat-label">Cloud Architectures</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">30+</span>
+                            <span class="stat-label">DevOps Tools</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">99.9%</span>
+                            <span class="stat-label">SLA Uptime</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual composition">
+                    <img src="assets/my-personal-images/me.jpg" class="hero-img-1" alt="Qasim Naveed">
+                    <img src="assets/my-personal-images/IMG-20240623-WA0173.jpg" class="hero-img-2 parallax" alt="Qasim Naveed Secondary">
+                    
+                    <div class="code-overlay">
+                        <div>> SYS_INIT: Architect</div>
+                        <div class="text-accent">> STATUS: Operational</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="container">
+            <div class="section-header">
+                <h2 class="section-title">Capabilities</h2>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-tilt>
+                    <span class="service-num">01 //</span>
+                    <h3 class="service-title">Infrastructure as Code (IaC)</h3>
+                    <p class="service-desc">Provisioning and managing large-scale cloud environments immutably using Terraform, AWS CloudFormation, and Ansible.</p>
+                </div>
+                <div class="service-card" data-tilt>
+                    <span class="service-num">02 //</span>
+                    <h3 class="service-title">Kubernetes & Orchestration</h3>
+                    <p class="service-desc">Deploying High-Availability EKS/AKS clusters, Helm charts, Rancher, and Istio Service Mesh for microservices.</p>
+                </div>
+                <div class="service-card" data-tilt>
+                    <span class="service-num">03 //</span>
+                    <h3 class="service-title">Zero-Trust Cloud Security</h3>
+                    <p class="service-desc">Architecting impenetrable networks using Cloudflare Tunnels, WAF, IAM Policies, AWS GuardDuty, and Nginx Reverse Proxies.</p>
+                </div>
+                <div class="service-card" data-tilt>
+                    <span class="service-num">04 //</span>
+                    <h3 class="service-title">CI/CD Pipeline Automation</h3>
+                    <p class="service-desc">Building seamless, automated deployment flows using GitHub Actions, GitLab CI, Jenkins, and ArgoCD for GitOps.</p>
+                </div>
+                <div class="service-card" data-tilt>
+                    <span class="service-num">05 //</span>
+                    <h3 class="service-title">Cloud Observability & SRE</h3>
+                    <p class="service-desc">Establishing full-stack monitoring, alerting, and log aggregation using Prometheus, Grafana, ELK Stack, and Datadog.</p>
+                </div>
+                <div class="service-card service-cta" onclick="window.location.href='#contact'">
+                    <div>
+                        <h3 class="service-title">Need a bulletproof cloud infrastructure?</h3>
+                        <p class="text-accent" style="margin-top: 1rem;">Let's engineer it -></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="container projects">
+            <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px solid var(--glass-border); padding-bottom: 1rem; margin-bottom: 3rem;">
+                <h2 class="section-title" style="margin-bottom: 0;">Selected Work</h2>
+                <div class="project-controls" style="display: flex; gap: 1rem;">
+                    <button id="proj-prev" class="btn btn-ghost" style="padding: 0.5rem 1rem;">&#8592; Prev</button>
+                    <button id="proj-next" class="btn btn-ghost" style="padding: 0.5rem 1rem;">Next &#8594;</button>
+                    <a href="projects.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">See All Projects</a>
+                </div>
+            </div>
+            
+            <div class="projects-wrapper" id="projects-wrapper">
+                
+                <div class="project-card" data-cursor="view">
+                    <div class="brackets"></div>
+                    <div class="project-visual">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80" alt="AWS Multi-Region" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.5; mix-blend-mode: luminosity; position: absolute; inset: 0; z-index: 0;">
+                        <div class="mesh-grid" style="position: absolute; inset: 0; z-index: 1;"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta"><span>01 — INFRASTRUCTURE</span><span>AWS</span></div>
+                        <h3 class="project-title">Global AWS Architecture</h3>
+                        <p class="service-desc">Architected a resilient, fault-tolerant infrastructure spanning 3 AWS regions using Terraform and Route 53 latency routing.</p>
+                        <div class="project-tech"><span class="tech-pill">AWS</span><span class="tech-pill">Terraform</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-cursor="view">
+                    <div class="brackets"></div>
+                    <div class="project-visual">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Zero-Trust Network" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.5; mix-blend-mode: luminosity; position: absolute; inset: 0; z-index: 0;">
+                        <div class="mesh-grid" style="position: absolute; inset: 0; z-index: 1;"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta"><span>02 — SECURITY</span><span>Cloudflare</span></div>
+                        <h3 class="project-title">Zero-Trust Network</h3>
+                        <p class="service-desc">Deployed an impenetrable perimeter utilizing Cloudflare Tunnels, WAF policies, and Nginx proxy management.</p>
+                        <div class="project-tech"><span class="tech-pill">Cloudflare</span><span class="tech-pill">Nginx</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-cursor="view">
+                    <div class="brackets"></div>
+                    <div class="project-visual">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80" alt="K8s Cluster" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.5; mix-blend-mode: luminosity; position: absolute; inset: 0; z-index: 0;">
+                        <div class="mesh-grid" style="position: absolute; inset: 0; z-index: 1;"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta"><span>03 — ORCHESTRATION</span><span>K8s</span></div>
+                        <h3 class="project-title">High-Availability K8s</h3>
+                        <p class="service-desc">Bootstrapped a production-grade Kubernetes cluster utilizing Rancher, Helm charts, and Istio Service Mesh.</p>
+                        <div class="project-tech"><span class="tech-pill">Kubernetes</span><span class="tech-pill">Helm</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-cursor="view">
+                    <div class="brackets"></div>
+                    <div class="project-visual">
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" alt="GitOps Pipeline" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.5; mix-blend-mode: luminosity; position: absolute; inset: 0; z-index: 0;">
+                        <div class="mesh-grid" style="position: absolute; inset: 0; z-index: 1;"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta"><span>04 — AUTOMATION</span><span>CI/CD</span></div>
+                        <h3 class="project-title">GitOps & CI/CD Pipeline</h3>
+                        <p class="service-desc">Fully automated deployment pipelines via GitHub Actions and ArgoCD, achieving zero-downtime blue/green deployments.</p>
+                        <div class="project-tech"><span class="tech-pill">GitHub Actions</span><span class="tech-pill">ArgoCD</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-cursor="view">
+                    <div class="brackets"></div>
+                    <div class="project-visual">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Observability" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.5; mix-blend-mode: luminosity; position: absolute; inset: 0; z-index: 0;">
+                        <div class="mesh-grid" style="position: absolute; inset: 0; z-index: 1;"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta"><span>05 — OBSERVABILITY</span><span>SRE</span></div>
+                        <h3 class="project-title">Telemetry & Logging</h3>
+                        <p class="service-desc">Implemented comprehensive full-stack monitoring using Prometheus, Grafana, and the ELK Stack for real-time anomaly detection.</p>
+                        <div class="project-tech"><span class="tech-pill">Prometheus</span><span class="tech-pill">Grafana</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-cursor="view">
+                    <div class="brackets"></div>
+                    <div class="project-visual">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80" alt="Microservices" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.5; mix-blend-mode: luminosity; position: absolute; inset: 0; z-index: 0;">
+                        <div class="mesh-grid" style="position: absolute; inset: 0; z-index: 1;"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta"><span>06 — CONTAINERS</span><span>Docker</span></div>
+                        <h3 class="project-title">Microservices Ecosystem</h3>
+                        <p class="service-desc">Containerized 15+ legacy applications into Docker Swarm with Traefik routing, Redis caching, and RabbitMQ brokering.</p>
+                        <div class="project-tech"><span class="tech-pill">Docker Swarm</span><span class="tech-pill">Redis</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-cursor="view">
+                    <div class="brackets"></div>
+                    <div class="project-visual">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="Azure DR" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.5; mix-blend-mode: luminosity; position: absolute; inset: 0; z-index: 0;">
+                        <div class="mesh-grid" style="position: absolute; inset: 0; z-index: 1;"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta"><span>07 — RESILIENCY</span><span>Azure</span></div>
+                        <h3 class="project-title">Azure Disaster Recovery</h3>
+                        <p class="service-desc">Engineered an automated failover system using Azure Site Recovery and Azure SQL Geo-Replication, dropping RTO to under 2 minutes.</p>
+                        <div class="project-tech"><span class="tech-pill">Azure</span><span class="tech-pill">SQL Failover</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-cursor="view">
+                    <div class="brackets"></div>
+                    <div class="project-visual">
+                        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80" alt="Infra Security" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.5; mix-blend-mode: luminosity; position: absolute; inset: 0; z-index: 0;">
+                        <div class="mesh-grid" style="position: absolute; inset: 0; z-index: 1;"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta"><span>08 — COMPLIANCE</span><span>SecOps</span></div>
+                        <h3 class="project-title">Infrastructure Security</h3>
+                        <p class="service-desc">Hardened cloud security posture utilizing AWS GuardDuty, HashiCorp Vault for secrets management, and Trivy image scanning.</p>
+                        <div class="project-tech"><span class="tech-pill">Vault</span><span class="tech-pill">GuardDuty</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="container">
+            <div class="section-header">
+                <h2 class="section-title">Career Timeline</h2>
+            </div>
+            
+            <div style="border-left: 2px solid var(--glass-border); padding-left: 2rem; display: flex; flex-direction: column; gap: 3rem;">
+                
+                <div style="position: relative;">
+                    <div style="position: absolute; left: -2.6rem; top: 0; width: 1rem; height: 1rem; background: var(--accent-neon); border-radius: 50%; box-shadow: 0 0 10px var(--accent-neon);"></div>
+                    <div class="project-meta" style="margin-bottom: 0.5rem;"><span>2024 — Present</span><span>Freelance</span></div>
+                    <h3 class="service-title" style="margin-bottom: 0.5rem;">Senior Cloud Architect & SRE</h3>
+                    <p class="service-desc">Upwork & Fiverr (Top Rated)</p>
+                    <p class="bio" style="margin-top: 1rem; font-size: 0.9rem;">Designing immutable cloud infrastructures, zero-trust networks, and deploying automated zero-downtime CI/CD pipelines for international enterprise clients.</p>
+                </div>
+
+                <div style="position: relative;">
+                    <div style="position: absolute; left: -2.6rem; top: 0; width: 1rem; height: 1rem; background: var(--bg-graphite); border: 2px solid var(--text-secondary); border-radius: 50%;"></div>
+                    <div class="project-meta" style="margin-bottom: 0.5rem;"><span>2023 — 2024</span><span>Agency</span></div>
+                    <h3 class="service-title" style="margin-bottom: 0.5rem;">DevOps Engineer</h3>
+                    <p class="service-desc">Tech Software Solutions</p>
+                    <p class="bio" style="margin-top: 1rem; font-size: 0.9rem;">Managed 20+ Kubernetes clusters via Rancher. Reduced deployment build times by 40% using optimized Docker multi-stage builds and CI/CD caching.</p>
+                </div>
+                
+                <div style="position: relative;">
+                    <div style="position: absolute; left: -2.6rem; top: 0; width: 1rem; height: 1rem; background: var(--bg-graphite); border: 2px solid var(--text-secondary); border-radius: 50%;"></div>
+                    <div class="project-meta" style="margin-bottom: 0.5rem;"><span>2022 — 2023</span><span>Startup</span></div>
+                    <h3 class="service-title" style="margin-bottom: 0.5rem;">Backend Developer (.NET)</h3>
+                    <p class="service-desc">Innovate Software</p>
+                    <p class="bio" style="margin-top: 1rem; font-size: 0.9rem;">Built scalable microservices using C# ASP.NET Core and Entity Framework. Implemented Redis caching and RabbitMQ for asynchronous event-driven architecture.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Engineered with intention.<br>
+                    <span class="text-accent">Deployed with precision.</span>
+                </h2>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card image-card">
+                    <div class="project-meta profile-badge">
+                        <span>Profile · 001</span>
+                        <span>Verified Source</span>
+                    </div>
+                    <div class="image-stack">
+                        <img src="assets/my-personal-images/IMG-20240623-WA0086.jpg" alt="Qasim Naveed at MUN" class="stack-img img-back">
+                        <img src="assets/my-personal-images/IMG-20240623-WA0143.jpg" alt="Qasim Naveed Profile" class="stack-img img-front">
+                    </div>
+                </div>
+                
+                <div>
+                    <p class="bio">
+                        I am a senior terminal-driven Cloud Engineer finishing my Computer Science degree at FAST-NUCES. Active top-rated SRE freelancer on Upwork and Fiverr, specialized in provisioning independent High-Availability infrastructure, CI/CD pipelines, and zero-trust cloud architectures.
+                    </p>
+                    
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h4 class="skill-title">CLOUD PROVIDERS & IAC</h4>
+                            <div class="skill-list">
+                                <span class="skill-item">AWS</span>
+                                <span class="skill-item">Microsoft Azure</span>
+                                <span class="skill-item">Terraform</span>
+                                <span class="skill-item">CloudFormation</span>
+                                <span class="skill-item">Ansible</span>
+                                <span class="skill-item">Linux Core</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4 class="skill-title">CONTAINERS & K8S</h4>
+                            <div class="skill-list">
+                                <span class="skill-item">Kubernetes (K8s)</span>
+                                <span class="skill-item">Docker Swarm</span>
+                                <span class="skill-item">Helm</span>
+                                <span class="skill-item">Rancher</span>
+                                <span class="skill-item">Istio Service Mesh</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4 class="skill-title">CI/CD & OBSERVABILITY</h4>
+                            <div class="skill-list">
+                                <span class="skill-item">GitHub Actions</span>
+                                <span class="skill-item">ArgoCD</span>
+                                <span class="skill-item">Prometheus</span>
+                                <span class="skill-item">Grafana</span>
+                                <span class="skill-item">ELK Stack</span>
+                                <span class="skill-item">Datadog</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category" style="grid-column: 1 / -1; margin-top: 1rem; border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                            <h4 class="skill-title">ACADEMIC BACKGROUND</h4>
+                            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; padding-top: 0.5rem;">
+                                <div>
+                                    <h3 style="font-family: var(--font-display); font-size: 1.2rem; color: var(--text-primary); margin-bottom: 0.3rem;">Bachelor of Science in Computer Science (BSCS)</h3>
+                                    <p style="color: var(--accent-neon); font-family: var(--font-mono); font-size: 0.875rem;">FAST-NUCES (National University of Computer and Emerging Sciences)</p>
+                                </div>
+                                <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-secondary); background: rgba(255,255,255,0.05); padding: 0.4rem 0.8rem; border-radius: 4px; border: 1px solid var(--glass-border);">
+                                    Aug 2022 — Jun 2026
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WRITINGS SECTION -->
+        <section id="writings" class="container">
+            <div class="section-header">
+                <h2 class="section-title">Writings & Thoughts</h2>
+            </div>
+            <div class="services-grid">
+                <a href="https://medium.com/@qasimblog" target="_blank" class="service-card" data-tilt style="text-decoration: none; display: block;">
+                    <span class="service-num">MEDIUM BLOG</span>
+                    <h3 class="service-title">The Architecture of Intelligent Agents</h3>
+                    <p class="service-desc">Exploring how LLMs and rule-based systems can be combined to create resilient multi-modal architectures.</p>
+                    <div style="margin-top: 1.5rem; color: var(--accent-neon); font-family: var(--font-mono); font-size: 0.8rem;">Read Article -></div>
+                </a>
+                <a href="https://medium.com/@qasimblog" target="_blank" class="service-card" data-tilt style="text-decoration: none; display: block;">
+                    <span class="service-num">MEDIUM BLOG</span>
+                    <h3 class="service-title">Cloud Native vs Serverless</h3>
+                    <p class="service-desc">A deep dive into deploying scalable enterprise applications using modern cloud tooling and DevOps pipelines.</p>
+                    <div style="margin-top: 1.5rem; color: var(--accent-neon); font-family: var(--font-mono); font-size: 0.8rem;">Read Article -></div>
+                </a>
+                <a href="https://medium.com/@qasimblog" target="_blank" class="service-card service-cta" style="text-decoration: none; display: flex;">
+                    <div>
+                        <h3 class="service-title">View All Articles on Medium</h3>
+                        <p class="text-accent" style="margin-top: 1rem;">@qasimblog -></p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS SECTION -->
+        <section id="certifications" class="container">
+            <div class="section-header">
+                <h2 class="section-title">Verified Credentials</h2>
+            </div>
+            <div class="cert-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                
+                <a href="assets/certificate/Coursera-certificate.pdf" target="_blank" class="service-card" data-tilt style="text-decoration: none; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 2rem;">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎓</div>
+                    <span class="service-num">COURSERA</span>
+                    <h3 class="service-title" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Professional Certificate</h3>
+                    <p class="service-desc">View official PDF credential.</p>
+                </a>
+                
+                <a href="assets/certificate/IBM-certificate.pdf" target="_blank" class="service-card" data-tilt style="text-decoration: none; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 2rem;">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🛡️</div>
+                    <span class="service-num">IBM</span>
+                    <h3 class="service-title" style="font-size: 1.1rem; margin-bottom: 0.5rem;">IBM Certified Specialist</h3>
+                    <p class="service-desc">View official PDF credential.</p>
+                </a>
+
+                <a href="assets/certificate/linuxfoundation-certificate.pdf" target="_blank" class="service-card" data-tilt style="text-decoration: none; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 2rem;">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🐧</div>
+                    <span class="service-num">LINUX FOUNDATION</span>
+                    <h3 class="service-title" style="font-size: 1.1rem; margin-bottom: 0.5rem;">System Administrator</h3>
+                    <p class="service-desc">View official PDF credential.</p>
+                </a>
+
+                <a href="assets/certificate/linuxfoundationcertified.pdf" target="_blank" class="service-card" data-tilt style="text-decoration: none; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 2rem;">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">☁️</div>
+                    <span class="service-num">LINUX FOUNDATION</span>
+                    <h3 class="service-title" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Certified Kubernetes</h3>
+                    <p class="service-desc">View official PDF credential.</p>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="container">
+            <div class="contact-grid">
+                <div>
+                    <h2 class="contact-mega">
+                        Let's build<br>
+                        <span class="text-accent">something bulletproof.</span>
+                    </h2>
+                    
+                    <form id="contact-form" class="contact-form" onsubmit="event.preventDefault(); handleFormSubmit();">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-input" placeholder=" " required>
+                            <label for="name" class="form-label">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-input" placeholder=" " required>
+                            <label for="email" class="form-label">Email</label>
+                        </div>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <label class="form-label" style="position: static; color: var(--text-secondary); font-size: var(--text-sm);">Project Scope</label>
+                            <div class="chips">
+                                <div class="chip active">AI Integration</div>
+                                <div class="chip">Cloud DevOps</div>
+                                <div class="chip">Full Stack App</div>
+                                <div class="chip">Automation</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" class="form-input" placeholder=" " rows="4" style="resize: none;" required></textarea>
+                            <label for="message" class="form-label">Message</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;" id="submit-btn">Initialize Connection</button>
+                    </form>
+                </div>
+                
+                <div class="side-info">
+                    <div class="contact-profile">
+                        <img src="assets/my-personal-images/IMG-20240623-WA0172.jpg" alt="Qasim Naveed" class="contact-avatar" style="align-self: flex-start;">
+                        <div>
+                            <p class="skill-title" style="margin-bottom: 0.5rem;">DIRECT CHANNELS</p>
+                            <a href="tel:03267933996" class="contact-email" style="font-size: var(--text-xl); margin-bottom: 1rem; display: block;">+92 326 7933996</a>
+                            <div style="display: flex; flex-direction: column; gap: 0.3rem;">
+                                <a href="mailto:info@sqnza.software" class="contact-link">info@sqnza.software</a>
+                                <a href="mailto:qasimnaveed206@gmail.com" class="contact-link">qasimnaveed206@gmail.com</a>
+                                <a href="mailto:kkcoder9211@gmail.com" class="contact-link">kkcoder9211@gmail.com</a>
+                                <a href="mailto:f223298@cfd.nu.edu.pk" class="contact-link">f223298@cfd.nu.edu.pk</a>
+                                <a href="mailto:qasimqazi.naveed@gmail.com" class="contact-link">qasimqazi.naveed@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <p class="skill-title" style="margin-bottom: 0.5rem;">DIGITAL FOOTPRINT</p>
+                        <div class="social-links" style="flex-wrap: wrap;">
+                            <a href="https://github.com/deviljerry" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="https://www.linkedin.com/in/qasim-naveed-a5778b248/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            <a href="https://www.credly.com/users/qasim-qazi-naveed/badges#credly" target="_blank" rel="noopener noreferrer" style="color: var(--accent-amber);">Credly Badges</a>
+                            <a href="https://www.fiverr.com/s/5rY95RE" target="_blank" rel="noopener noreferrer">Fiverr</a>
+                            <a href="https://www.upwork.com/freelancers/~012c152a4b80a999b6?mp_source=share" target="_blank" rel="noopener noreferrer">Upwork</a>
+                        </div>
+                    </div>
+                    
+                    <div class="status-panel">
+                        <p class="skill-title" style="margin-bottom: 1rem;">CURRENT STATUS</p>
+                        <ul>
+                            <li>Finalizing Thesis Exams</li>
+                            <li>Serving as Web & GenAI Teaching Assistant</li>
+                            <li>Open to remote contracts</li>
+                        </ul>
+                    </div>
+
+                    <div class="location-panel">
+                        <p class="skill-title" style="margin-bottom: 0.5rem;">OPERATING FROM</p>
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106332.96678229711!2d73.0130953!3d33.6158223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6059515c3bdb02b6!2sIslamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="marquee">
+            <div class="marquee-content">
+                <span>SYSTEMS ONLINE</span>
+                <span>·</span>
+                <span>OPEN FOR PROJECTS</span>
+                <span>·</span>
+                <span>ARCHITECTING THE FUTURE</span>
+                <span>·</span>
+                <span>SYSTEMS ONLINE</span>
+                <span>·</span>
+                <span>OPEN FOR PROJECTS</span>
+                <span>·</span>
+                <span>ARCHITECTING THE FUTURE</span>
+                <span>·</span>
+            </div>
+            <div class="marquee-content" aria-hidden="true">
+                <span>SYSTEMS ONLINE</span>
+                <span>·</span>
+                <span>OPEN FOR PROJECTS</span>
+                <span>·</span>
+                <span>ARCHITECTING THE FUTURE</span>
+                <span>·</span>
+                <span>SYSTEMS ONLINE</span>
+                <span>·</span>
+                <span>OPEN FOR PROJECTS</span>
+                <span>·</span>
+                <span>ARCHITECTING THE FUTURE</span>
+                <span>·</span>
+            </div>
+        </div>
+        
+        <div class="wordmark" id="wordmark">QASIM NAVEED</div>
+
+        <div class="footer-grid container">
+            <div class="footer-col">
+                <h4 class="footer-title">Qasim Naveed</h4>
+                <p class="footer-text">Architecting intelligent, high-performance digital systems and AI-powered workflows.</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Fiverr Offerings</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.fiverr.com/s/5rY95RE" target="_blank">Full Stack Development</a></li>
+                    <li><a href="https://www.fiverr.com/s/XL48e3G" target="_blank">AI & LLM Integration</a></li>
+                    <li><a href="https://www.fiverr.com/s/vvXgdKN" target="_blank">Cloud Architecture</a></li>
+                    <li><a href="https://www.fiverr.com/s/99l3jXa" target="_blank">Custom Scripts & Bots</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Freelance Platforms</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.upwork.com/freelancers/~012c152a4b80a999b6?mp_source=share" target="_blank" class="text-accent">Upwork Profile</a></li>
+                    <li><a href="https://github.com/deviljerry" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/qasim-naveed-a5778b248/" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <span>© 2026 Qasim Naveed</span>
+            <span>Built with Vanilla Tech</span>
+            <span style="color: var(--accent-neon);">Status: Operational</span>
+        </div>
+    </footer>
+
+    <!-- Chatbot UI -->
+    <div class="chatbot-widget">
+        <button class="chatbot-toggle" id="chatbot-toggle">
+            <span class="chatbot-icon">💬</span>
+        </button>
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chatbot-header">
+                <div>
+                    <h4 style="margin: 0; color: var(--text-primary); font-size: 1rem;">Qasim (AI Agent)</h4>
+                    <span style="font-size: 0.75rem; color: var(--accent-neon);">Online</span>
+                </div>
+                <button class="chatbot-close" id="chatbot-close">✕</button>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="chat-msg bot-msg">Hello! I am Qasim's virtual assistant. How can I help you today?</div>
+            </div>
+            <form class="chatbot-input-area" id="chatbot-form">
+                <input type="text" id="chatbot-input" placeholder="Type a message..." required>
+                <button type="submit">→</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="back-to-top" class="btn btn-primary" style="position: fixed; bottom: 6rem; right: 2rem; z-index: 9998; border-radius: 50%; width: 50px; height: 50px; padding: 0; display: flex; justify-content: center; align-items: center; opacity: 0; pointer-events: none; transition: opacity 0.3s, transform 0.3s; font-size: 1.2rem; box-shadow: 0 10px 20px rgba(0,255,102,0.2); border: none;">&#8593;</button>
+
+</body>
+</html>
